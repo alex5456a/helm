@@ -1,7 +1,9 @@
-helm install my-wordpress groundhog2k/wordpress --version 0.14.0 -
-mariadb.enabled: true
-mariadb.settings.rootPassword: custom-wp-credentials
-mariadb.userDatabase.name: wpdb
-mariadb.userDatabase.user: wpuser
-mariadb.userDatabase.password: custom-wp-credentials
-service.type: LoadBalancer"
+mariadb
+  enabled: true
+  settings: 
+    rootPassword: custom-wp-credentials
+  userDatabase:
+    name: wpdb
+    user: wpuser
+    password: custom-wp-credentials
+service.type: LoadBalancer
