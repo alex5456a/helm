@@ -1,4 +1,4 @@
-mariadb
+mariadb:
   enabled: true
   settings: 
     rootPassword: custom-wp-credentials
@@ -6,4 +6,5 @@ mariadb
     name: wpdb
     user: wpuser
     password: custom-wp-credentials
-service.type: LoadBalancer
+service:
+  type: LoadBalancer
